@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <!--==============GOOGLE FONT - OPEN SANS=================-->
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
@@ -15,7 +16,7 @@
 
 <!--==============MAIN CSS FOR HOSTING PAGE=================-->
 
-<link href="css/hosting.css" rel="stylesheet" media="all">
+<link href="css/hosting.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -23,24 +24,16 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<!--==============Mordernizr =================-->
+<!--==============Mordernizr =================--> 
 
-<script src="js/modernizr.js"></script>
+<script src="js/modernizr.js"></script> 
+
+<!--==============JQuery=================-->
+
 <script src="js/jquery.min.js"></script>
-
-<style>
-
-.not-found-h1 {
-	font-size:130px;	
-	margin:150px 0 20px;
-	text-align:center;
-}
-
-</style>
 
 </head>
 <body>
-
 <!--==============Logo & Menu Bar=================-->
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
@@ -53,7 +46,21 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html#home">BACK TO HOME</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li class="hidden-sm"><a href="features.html">FEATURES</a></li>
+        <li class="hidden-sm"><a href="testimonials.html">PARTNERS</a></li>
+        <li><a href="pricing.html">PRICING</a></li>
+        <li class="active dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">IT SOLUTIONS <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">SERVERS</a></li>
+            <li><a href="blog-post.html">NETWORKS</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="#" role="button" data-toggle="modal" data-target="#Login">Login</a></li>
+        <li><a href="https://www.mekongnet.vn/portal/register.php" role="button" class="btn btn-success">Sign Up</a></li>
+      </ul>
+      </li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -63,37 +70,74 @@
 
 <!--==============Content Area=================-->
 
-<div class="container">
-
- 
-  <!--============== 404 Page ==============-->
- 
+<div class="container"> 
   
-  <h1 class="not-found-h1">404.</h1>
- 
- <h2 class="text-center">Oops. Looks like you lost in the space. </h2>
-  <hr>
-  <br>
+  <!--============== Blog ==============-->
+  
+  <div class="row PageHead">
 
- <div class="text-center">
- 
- <a href="index.html" class="btn btn-success btn-lg">Go to Home</a>
- 
-  <a href="index.html#contact" class="btn btn-primary btn-lg">Contact Us</a>
- 
- </div>
- 
- <br>
-<br>
-<br>
-<br>
-<br>
-
-   
+    <div class="col-md-12">
+      <h1>Our Blog</h1>
+      <h3>Latest news and updates from MKN</h3>
+    </div>
+  </div>
+  <div class="row blog">
+    <div class="col-md-9">
+      <div class="blogpost">
+        <h1 class="title">MKN Offers Dedicated Hosting</h1>
+        <h3 class="subtitle">Posted by <a href="#">Surjith SM</a> on 17 Jul 2013. <a href="#">16 comments</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit nunc luctus. Etiam adipiscing et sapien a accumsan. Integer gravida vestibulum eros at elementum. Maecenas a velit hendrerit, tristique tortor lacinia, vehicula sapien. Cras cursus sodales posuere. Sed viverra mi mauris, at dapibus orci varius non.</p>
+        <p><a href="#Signup" role="button" data-toggle="modal" class="btn btn-success">READ MORE</a></p>
+      </div>
+      <div class="blogpost">
+        <h1 class="title">Managed Hosting vs Dedicated Hosting</h1>
+        <h3 class="subtitle">Posted by <a href="#">Surjith SM</a> on 17 Jul 2013. <a href="#">16 comments</a></h3>
+        <img src="images/blog-img1.png" alt="blog img">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit nunc luctus. Etiam adipiscing et sapien a accumsan. Integer gravida vestibulum eros at elementum. Maecenas a velit hendrerit, tristique tortor lacinia, vehicula sapien. Cras cursus sodales posuere. Sed viverra mi mauris, at dapibus orci varius non.</p>
+        <p><a href="#Signup" role="button" data-toggle="modal" class="btn btn-success">READ MORE</a></p>
+      </div>
+      <div class="blogpost">
+        <h1 class="title">5 Pitfalls of Domain Registration</h1>
+        <h3 class="subtitle">Posted by <a href="#">Surjith SM</a> on 17 Jul 2013. <a href="#">16 comments</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit nunc luctus. Etiam adipiscing et sapien a accumsan. Integer gravida vestibulum eros at elementum. Maecenas a velit hendrerit, tristique tortor lacinia, vehicula sapien. Cras cursus sodales posuere. Sed viverra mi mauris, at dapibus orci varius non.</p>
+        <p><a href="#Signup" role="button" data-toggle="modal" class="btn btn-success">READ MORE</a></p>
+      </div>
+    </div>
+    <div class="col-md-3 sidebar">
+      <h3>Categories</h3>
+      <ul class="bloglist">
+        <li>Dedicated Servers</li>
+        <li>Managed Hosting</li>
+        <li>News and Updates</li>
+        <li>New Features</li>
+        <li>Domian Registration</li>
+        <li>Server Locations</li>
+      </ul>
+      <br>
+      <h3>Text Widget</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. <br>
+        <br>
+        Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit.</p>
+      <br>
+      <h3>Archieves</h3>
+      <ul class="bloglist">
+        <li>May 2013</li>
+        <li>April 2013</li>
+        <li>March 2013</li>
+        <li>February 2013</li>
+        <li>January 2013</li>
+        <li>December 2012</li>
+        <li>November 2012</li>
+        <li>October 2012</li>
+        <li>September 2012</li>
+        <li>August 2012</li>
+      </ul>
+    </div>
+  </div>
+  <!--Blog Closed--> 
+  
 </div>
-<!--Container End--> 
-
-
+<!--Container Closed--> 
 
 <!--============== Footer ==============-->
 
@@ -157,7 +201,7 @@
   </div>
 </div>
 
-<!--==============MODAL LOGIN=================--> 
+<!--==============MODAL LOGIN=================-->
 
 <!-- Modal -->
 <div class="modal fade LoginSignup" id="Login" tabindex="-1" role="dialog" aria-labelledby="LoginLabel" aria-hidden="true">
@@ -188,65 +232,10 @@
 <!-- /.modal --> 
 
 
-<!--===Back to top======--> 
-<a href="#" class="scrollup">Scroll</a> 
 
-<!--==============QUERY LIBRARY=================--> 
-
-<script src="js/jquery.easing.1.2.js"></script> 
 
 <!--==============BOOTSTRAP JS=================--> 
 
 <script src="js/bootstrap.min.js"></script> 
-
-<!--==========ONE PAGE SCROLLING SCRIPTS STARTS===============--> 
-
-<script>
-            $(function() {
-                $('.nav li a').bind('click',function(event){
-                    var $anchor2 = $(this).parent();
-				    var $anchor = $(this);
-					$('.nav  li').removeClass('active');
-                    $anchor2.addClass('active');
-					
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top - 50
-                    }, 1500,'easeInOutExpo');
-                    /*
-                    if you don't want to use the easing effects:
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    }, 1000);
-                    */
-                    event.preventDefault();
-                });
-            });
-        </script> 
-
-<!--=============ONE PAGE SCROLLING SCRIPTS ENDS============--> 
-
-<!--=============BACK TO TOP STARTS============--> 
-
-<script>
-    $(document).ready(function(){ 
- 
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 800) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        }); 
- 
-        $('.scrollup').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-        });
- 
-    });
-</script> 
-
-<!--=============BACK TO TOP ENDS============-->
-
 </body>
 </html>
